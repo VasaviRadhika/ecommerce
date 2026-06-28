@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>🛍️ E-Commerce Store</h1>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+  <div class="logo">MyShop</div>
+
+  <!-- TOGGLE BUTTON -->
+  <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+
+  <!-- SEARCH -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search product...">
+    <button type="button" onclick="searchProduct()">Search</button>
+  </div>
+
+  <!-- NAV LINKS -->
+  <div class="nav-links" id="navLinks">
+    <button onclick="showSection('users')">👤 Users</button>
+    <button onclick="showSection('products')">📦 Products</button>
+    <button onclick="showSection('cart')">
+      🛒 Cart ₹<span id="total">0</span>
+    </button>
+  </div>
+
+</nav>
+
+<!-- USERS -->
+<div class="user-section">
+  <h2>👤 Users</h2>
+  <div id="users"></div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="product-section" style="display:none;">
+  <h2>📦 Products</h2>
+  <div id="products"></div>
+</div>
+
+<!-- CART -->
+<div class="cart-section" style="display:none;">
+  <h2>🛒 Cart</h2>
+  <div id="cartItems"></div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* LOGO */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* TOGGLE BUTTON */
+.toggle-btn {
+  display: none;
+  font-size: 22px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* SEARCH */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-box input {
+  padding: 6px;
+  width: 180px;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #444;
+    margin-top: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-box input {
+    width: 70%;
+  }
+}
+
+/* USERS FLEXBOX */
+#users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.user {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 220px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+/* PRODUCTS */
+.product {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  width: 200px;
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* CART */
+.cart-item {
+  margin: 10px;
+}
